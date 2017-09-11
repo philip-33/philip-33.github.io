@@ -115,13 +115,9 @@ p.photos {
 
 p.photos img {
     margin: 1em;
-    max-width: 100%;
-    height: auto;
 }
 
 .center {
     display: table;
     margin: auto;
   }
-  
-  

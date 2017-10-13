@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00cd00">
+    <meta name="theme-color" content="#ffffff">    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Development Tools | Visual Studio Code for Web Developers- CIT 82 Project 0</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Project 0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Development Skills</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="tools.html">Developer Tools
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="github.html">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="platforms.html">Platforms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="standards.html">Standards</a>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Visual Studio Code for Web Developers</h1>
+        <img class="img-fluid" src="img/cat-tools/topic-vscode.png">        
+        <p>     <br><h4>Chapter 1 - Overview of VS Code</h4>
+                <br>VSCode UI 
+                <br>* Left sidebar has basic tools: Explorer, search, git (if enabled), debug, extensions
+                <br>* Command Palette (CTRL + Shift + P) provides access to all VSCode commands
+                <br>Basic editing
+                <br>* If there is no selection, cut and copy work on the whole line
+                <br>* VSCode autocompletes where it can, including quotes, brackets, braces, and parentheses
+                <br>The integrated terminal
+                <br>* The integrated terminal runs with the same permissions as VSCode
+                <br>* Multiple terminals can be opened using the dropdown
+                <br>Integrated Source Control
+                <br>* With Git connected, VSCode shows when files are different from the repo
+                <br>* VSCode can show current and staged files side-by-side, and can commit staged changes with a commit message
+                <br>
+                <br><h4>Chapter 2 - Customizing VS Code</h4>
+                <br>Configuring preferences
+                <br>* By selecting preferences, we’re show a default file that is read-only and a custom file that overwrites user or workspace defaults with custom values. The defaults are searchable.
+                <br>* Most functions of the program are controlled in the “Editor” and “Workbench” sections
+                <br>Setting keyboard shortcuts
+                <br>* All shortcuts are editable, but some only happen within certain contexts (window focus, for instance)
+                <br>* Edited keyboard shortcuts are saved in a .json file, like other preference changes
+                <br>Using extensions
+                <br>* Extensions can be found via browser or within VSCode itself. The search feature is powerful.
+                <br>* Extensions can add arrays of features for specific languages, and VSCode can recommend extensions based on the files you are working with 
+                <br>Essential extensions
+                <br>* This list is focused on web apps, but there are many extensions for other languages
+                <br>* Extensions shown: HTML5 Snippets, JQuery Snippets, Beautify, Express (web server), REST client extension
+                <br>Working with snippets
+                <br>* Snippets are provided by VSCode or extensions, and are usually completed by starting the command/tag and a popup will suggest completion options.
+                <br>* Snippets can be configured and customized, again with json files.
+                <br>Color and Icon themes
+                <br>* Themes cover the colors of the windows, backgrounds, and text syntax highlighting
+                <br>* Icon themes change the icons used for files in the explorer. A good icon theme will make quickly identifying files easier
+                <br>
+                <br><h4>Chapter 3 - Using the Editor</h4>
+                <br>Files, folders, and projects
+                <br>* VSCode treats individual folders as projects, and can parse existing project structures
+                <br>* When a filename is in italics in the tab bar, it is in preview mode, which means the tab will be reused to show other selected files. After saving, the filename will become normal and the tab will remain until closed.
+                <br>* Right-clicking on a file will allow opening a terminal directly to that folder
+                <br>Side by side editing
+                <br>* Right-click on a file and select “open on the side” to see the same or different files side by side
+                <br>* The split can be horizontal or vertical, and each viewport can have its own set of tabs
+                <br>IntelliSense
+                <br>* AKA code completion, and built into VSCode. It assists with programming by suggesting common completions for characters that have been typed.
+                <br>* In addition to completion, it can also show function parameter lists to ease the burden of remembering detailed and/or complicated function parameters
+                <br>Finding and replacing
+                <br>* CTRL+F begins the search function. The find panel also allows search and replace, and the edit menu allows searching across multiple files
+                <br>* CTRL+SHIFT+J allows for more detailed searching with wildcards
+                <br>
+                <br><h4>Chapter 4 - Advanced Editing</h4>
+                <br>Editor features
+                <br>* Hot exit saves unsaved files, enable autosave.
+                <br>* VSCode can update the formatting of a file on save based on the formatting rules provided by VSCode or extensions. This is disabled by default.
+                <br>Web code editing
+                <br>* VSCode can quickly comment out selected code with CTRL+/ and uses the correct method based on the file type. Additionally, it can assist with the generation of documentation
+                <br>* Markdown features allow for quick prototyping and works in multiple file types. Also, Emmet is a common tool for autocompleting HTML snippets using a shorthand.
+                <br>Navigating code
+                <br>* CTRL+G jumps to a specific line, CTRL+Shift+o jumps to a symbol (id, class name, etc.)
+                <br>* Using CTRL+P (quick open), VSCode shows a list of recent files to choose from
+                <br>Using multiple selections
+                <br>* VSCode has CTRL+D for specific selection of the same portions of code on different lines. Successive CTRL+D’s will select addition instances of the same code. This allows for editing multiple lines of code at one time.
+                <br>* CTRL+ALT+up arrow
+                </p>
+      </header>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; nobody 2017. <a href="https://drive.google.com/open?id=0B5oxlAq23sJQTVdwM3Q2WTQxdjg" target="_blank">Link to sitemap</a></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

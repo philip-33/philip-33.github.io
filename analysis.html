@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00cd00">
+    <meta name="theme-color" content="#ffffff">    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Development Skills | Bootstrap Template Analysis - CIT 82 Project 0</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Project 0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="skills.html">Development Skills
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools.html">Developer Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="github.html">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="platforms.html">Platforms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="standards.html">Standards</a>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Bootstrap Template Analysis</h1>
+        <img class="img-fluid" src="img/cat-dev/topic-bootstrap.jpg">   
+        <p>This is a breakdown of the bootstrap template I used for this site.</p>     
+        <p style="white-space: pre-wrap">
+                Layout and Content:
+                &lt!-- Bootstrap core CSS -->
+                &ltlink href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+             
+                &lt!-- Custom styles for this template -->
+                &ltlink href="css/heroic-features.css" rel="stylesheet">
+             
+             
+             These are straightforward. The bootstrap css file is a local minified copy, and the css file for the template itself is also local.
+             
+             
+                 &ltnav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                  &ltdiv class="container">
+                    &lta class="navbar-brand" href="#">Start Bootstrap&lt/a>
+             …
+             …
+                        &lt/li>
+                      &lt/ul>
+                    &lt/div>
+                  &lt/div>
+                &lt/nav>
+             
+             
+             This is a navbar that sits at the top of the entire page. It spans the entire width of the page, but the content (Start bootstrap on the left and nav links on the right) matches the container that the rest of the page sits in. The nav links collapse to a hamburger with the same nav links when the width goes below a certain size.
+             
+             
+                  &ltheader class="jumbotron my-4">
+                    &lth1 class="display-3">A Warm Welcome!&lt/h1>
+                    &ltp class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.&lt/p>
+                    &lta href="#" class="btn btn-primary btn-lg">Call to action!&lt/a>
+                  &lt/header>
+             
+             The header of the page has several important elements. First is the jumbotron, designed for headlines. It also uses a class “my-4” this is for setting margins on the ‘y’ axis to a setting of 4 on a scale of 0-5. These are built into bootstrap and exist for each side as a whole as well as individually, x axis (left and right), and y axis (top and bottom).
+             
+             
+             For the cards, after 
+             
+             
+              &ltdiv class="row text-center">
+             
+             
+             Are the cards themselves. These use col-lg-3 so that when the display is “large”, then the cards appear as 4-in-a-row. The col-md-6 class shows that when the display is “medium”, the cards will only show 2-in-a-row. The ‘card’ classes I thought were part of the template are actually part of bootstrap.
+             
+             
+                   &ltdiv class="col-lg-3 col-md-6 mb-4">
+                      &ltdiv class="card">
+                        &ltimg class="card-img-top" src="http://placehold.it/500x325" alt="">
+                        &ltdiv class="card-body">
+                          &lth4 class="card-title">Card title&lt/h4>
+                          &ltp class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.&lt/p>
+                        &lt/div>
+                        &ltdiv class="card-footer">
+                          &lta href="#" class="btn btn-primary">Find Out More!&lt/a>
+                        &lt/div>
+                      &lt/div>
+                    &lt/div>
+             
+             
+             
+             
+             The footer uses a padding class just like the margin class above.
+             
+             
+                &ltfooter class="py-5 bg-dark">
+                  &ltdiv class="container">
+                    &ltp class="m-0 text-center text-white">Copyright &copy; Your Website 2017&lt/p>
+                  &lt/div>
+             
+             
+             
+             
+             At the end are script tags for the different JS libraries used for the page
+             &ltscript src="vendor/jquery/jquery.min.js">&lt/script>
+                     &ltscript src="vendor/popper/popper.min.js">&lt/script>
+                     &ltscript src="vendor/bootstrap/js/bootstrap.min.js">&lt/script> </p>
+             <p>What I need to know to completely understand the template:
+             I need to know what I’m missing. From the looks of it, this template literally only adds the tag structure for the navbar and cards, while everything else is bootstrap.
+        </p>
+      </header>
+
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; nobody 2017. <a href="https://drive.google.com/open?id=0B5oxlAq23sJQTVdwM3Q2WTQxdjg" target="_blank">Link to sitemap</a></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

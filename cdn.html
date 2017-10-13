@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GitHub | Semantic Versioning - CIT 82 Project 0</title>
+    <title>Development Skills | Content Distribution Networks - CIT 82 Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,16 +42,16 @@
               <a class="nav-link" href="index.html">Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Development Skills</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="skills.html">Development Skills
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="tools.html">Developer Tools</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="github.html">GitHub
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="github.html">GitHub</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="platforms.html">Platforms</a>
@@ -69,14 +69,13 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Semantic Versioning</h1>
-        <img class="img-fluid" src="img/cat-git/topic-semantic.jpg">        
-        <p class="lead">This is a really clever system that has come up around the need for a clear way to understand versioning. Not only does it quickly convey the relationships between versions in a meaningful way, it also gets developers thinking more critically about their applications and how they write and release software.</p>
-        <p>The SemVer website has some interesting questions in the FAQ that directly address the software development process. The question regarding rapid major version increases because of minor API changes is countered by suggesting against frivolous API revisions because the cost of API upgrades could be significant to users.</p> 
-        <p>For a program that uses semantic versioning, I found Burp Suite. It's a large set of tools designed to help with network security testing:</p>
-        <p><a href="https://portswigger.net/burp" target="_blank">Burp Suite by Portswigger</a></p>
-        <p>As of August 31, 2017, Burp Suite is version 1.7.27. Their website shows December 2008 with their initial full public release of version 1.2, and January 2009 had their first patch with 1.2.01.</p>
+        <h1 class="display-3">Content Distribution Networks</h1>
+        <img class="img-fluid" src="img/cat-dev/topic-cdn.jpg">        
+        <p class="lead">This was an interesting project because I made a mistake. The files I used to create the branch were accidentally a few commits behind the current master on GitHub. I didn't notice until after I had already created the upstream link and pushed the commits. I only noticed the error when I saw that the bootdemo branch was "1 commit ahead, 4 commits behind master". Checking the master branch, it had a .gitignore file that the branch was missing. I found the <a href="https://stackoverflow.com/questions/3876977/update-git-branches-from-master#3877000">exact solution on StackOverflow</a>. It involved merging the current master into the branch. Once I did this and pushed, GitHub showed bootdemo as "2 commits ahead of master", which was just what I was working toward.</p>
+        <p>So this shows how to update branches from the master branch, if necessary. This wasn't something I had thought would be necessary but it makes sense the functionality is there. The other super important lesson is to clone your repo before you begin working.</p>
       </header>
+
+      <!-- /.row -->
 
     </div>
     <!-- /.container -->
